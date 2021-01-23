@@ -1,0 +1,25 @@
+[package]
+name = "hello-actix"
+version = "0.1.0"
+authors = ["Binabh <binabhdevkota@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# actix libraries
+actix-web = "3"
+actix-rt = "1"
+# configs and dotenv libraries
+config = "0.10"
+dotenv = "0.15"
+# serialization library
+serde = { version = "1.0", feature = ["derive"]}
+# logging libraries
+eyre = "0.4"
+color-eyre = "0.3"
+tracing = "0.1"
+tracing-futures = "0.2"
+tracing-log = {version = "0.1", features = ["env_logger"]}
+tracing-subscriber = "0.2"
+
